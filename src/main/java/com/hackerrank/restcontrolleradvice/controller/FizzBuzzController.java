@@ -16,7 +16,8 @@ import com.hackerrank.restcontrolleradvice.enums.FizzBuzzEnum;
 
 @RestController
 public class FizzBuzzController {
-
+// this request mapping is generic mapping
+// this method is generic method 
 	@RequestMapping(value = "/controller_advice/{code}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<FizzBuzzResponse> getFizzBuzzResponse(@PathVariable("code") String code)
 			throws FizzException, BuzzException, FizzBuzzException {
